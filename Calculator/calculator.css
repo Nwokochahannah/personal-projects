@@ -1,0 +1,112 @@
+*,
+*::before,
+::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-dark: #dadada;
+    --clr-light: #3e76d2;
+    --clr-accent: #FB8C00;
+    --clr-bluish: #9e9ed2;
+    --clr-lighter: #5967c1;
+
+    --bs-screen:inset 0 2.8px 2.2px #d0cdcd,
+                inset -2px -2px 4.3px #FAFAFA, 
+                inset 0px 0px 11px #DADAD5, 
+                inset 0px 0px 15.9px #dad5d5, 
+                inset 2px 2px 2.4px #2b2727, 
+                0 0 20px #dadada;
+
+    --bs-button: 0 2.8px 2.2px #d0cdcd,
+                 -2px -2px 4.3px #FAFAFA, 
+                 0px 0px 11px #DADAD5, 
+                 0px 0px 15.9px #dad5d5, 
+                 2px 2px 2.4px #2b2727, 
+                 0 0 20px #dadada;
+
+    --fs-row: .80rem;
+    --fs-screen: 1.25rem;
+}
+
+body{
+    margin: 0;
+}
+
+.calc-container{
+    margin: 3rem auto;
+    background-color: var(--clr-dark);
+    padding: 3rem 1rem 1rem 1rem;
+    width: 12.5rem;   
+    border-radius: 1rem;
+    color: var(--clr-bluish);
+    font-weight: 500;
+}
+
+
+
+.calc-screen{
+    padding: .8rem .8rem;
+    height: 4.65rem;
+    max-width: 12rem;
+    background-color: var(--clr-dark);
+    box-shadow: var(--bs-screen);
+    border-radius: 1.5rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.runningTotal{
+    font-size: .8rem;
+}
+
+.operator{
+    margin: .8rem 0;
+    font-size: 25px;
+    color: var(--clr-light);
+}
+
+.calc-buttons-wrapper{
+    margin: 1rem 0 0 0;
+}
+
+.calc-buttons-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.calc-button:last-child{
+    color: var(--clr-accent);
+}
+
+.calc-button{
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: var(--bs-button);
+    padding: .7em;
+    font-size: 0.9em;
+    min-width: 2.5em;
+    margin-bottom: 0.6em;
+    cursor: default;
+}
+
+.double{
+    min-width: 5.5em;
+    border-radius: 10rem;
+    color: var(--clr-bluish) !important;
+}
+
+.first{
+    color: var(--clr-lighter);
+}
+
+/* .calc-button:hover{
+    background-color: #ebebeb;
+    box-shadow: none;
+}
+
+.calc-button:active{
+    background-color: #bbbcbe;
+} */
