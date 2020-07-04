@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-primary: 'Yantramanav', sans-serif;
+
+    --fw-reg: 400;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #34384D;
+    --clr-accent: #D3D1E0;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.6rem;
+    --fs-h4: 1.35rem;
+    --fs-h5: 1.225rem;
+    --fs-h6: 1.1rem;
+    --fs-reg: .9rem;
+    --fs-body: 1.1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+body {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
+    font-family: var(--ff-primary);
+    overflow-x: hidden;
+    direction: ltr;
+}
+
+.navigation{
+    align-items: flex-start;
+    background-color: var(--clr-light) !important;
+}
